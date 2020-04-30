@@ -70,6 +70,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button botaoReiniciar = findViewById(R.id.reiniciar);
+        botaoReiniciar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                reiniciarPartida();
+            }
+        });
     }
     /*
                         TIME A
@@ -114,6 +121,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void addUmPontoTimeB(){
         timeB.tiroLivre();
+        mostrarPlacarTimeB(timeB.getPontuacaoTime());
+    }
+
+    public void reiniciarPartida(){
+        timeA.reset();
+        timeB.reset();
+        mostrarPlacarTimeA(timeA.getPontuacaoTime());
         mostrarPlacarTimeB(timeB.getPontuacaoTime());
     }
 

@@ -18,6 +18,9 @@ public class Time {
     public void tiroLivre(){
         this.pontuacaoTime++;
     }
+    public void reset(){
+        this.pontuacaoTime = 0;
+    }
     public int getPontuacaoTime(){
         return this.pontuacaoTime;
     }
