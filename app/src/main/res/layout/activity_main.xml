@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/grey50"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_timeA"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/timeA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time A"
+            android:gravity="center"
+            android:padding="4dp"/>
+        <TextView
+            android:id="@+id/placarTimeA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:padding="4dp"/>
+
+        <Button
+            android:id="@+id/tresPontosA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+3 Pontos"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:background="@android:color/holo_orange_dark"/>
+        <Button
+            android:id="@+id/doisPontosA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+2 Pontos"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:background="@android:color/holo_orange_dark"/>
+        <Button
+            android:id="@+id/tiroLivreA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiro Livre"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:background="@android:color/holo_orange_dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_timeB"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/timeB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time B"
+            android:gravity="center"
+            android:padding="4dp"/>
+        <TextView
+            android:id="@+id/placarTimeB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:padding="4dp"/>
+
+        <Button
+            android:id="@+id/tresPontosB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+3 Pontos"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:background="@android:color/holo_orange_dark"/>
+        <Button
+            android:id="@+id/doisPontosB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+2 Pontos"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:background="@android:color/holo_orange_dark"/>
+        <Button
+            android:id="@+id/tiroLivreB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiro Livre"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:background="@android:color/holo_orange_dark"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
